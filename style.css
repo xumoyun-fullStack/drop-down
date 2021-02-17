@@ -1,0 +1,81 @@
+*{
+    padding:0;
+    margin:0;
+   
+}
+@import './fonts/style.css';
+
+
+body{
+    background-image: url('https://thumbs.dreamstime.com/z/office-desk-coffee-tablet-pc-mobile-phone-business-background-office-desk-cup-coffee-tablet-pc-mobile-phone-business-102038734.jpg');
+    background-size: auto;
+    position:relative;
+}
+
+.menubar{
+    text-align: center;
+    background-color: rgba(6, 8, 8, 0.9);
+    
+}
+.menubar ul{
+    display:inline-flex;
+}
+.menubar ul li{
+    list-style: none;
+    padding:10px 0;
+    margin:15px 0;
+    
+}
+
+.menubar ul li a{
+    color:#fff;
+    text-decoration: none;
+    padding:8px 20px;
+    margin:20px 20px;
+    font-size: 20px;
+    font-family: 'Myriad Pro Regular';
+    
+    /* background-color:rgba(175, 101, 241, 0.9); */
+}
+
+.menubar ul li:hover{
+    background-color: rgba(6, 8, 8, 1);
+    border-radius: 3px;
+}
+.drop_home {
+    display:none;    
+}
+
+.menubar ul li.drop_home ul li
+{
+    width:130px;
+}
+.menubar ul li:hover .drop_home{
+    display:block;
+    position:absolute;
+    margin-top:25px;
+    background-color:rgba(6, 8, 8, 0.9);
+    
+}
+
+.menubar ul li:hover .drop_home ul{
+    display:block; 
+}
+.menubar ul li:hover .drop_home ul li{
+    border-bottom:1px dotted #1e558d;
+    margin:10px;
+    margin-top:0;
+}
+.menubar ul li:hover .drop_home ul li:first-child{
+    padding-top:0;
+}
+.menubar ul li:hover .drop_home ul li:last-child{
+    border-bottom: none;
+}
+
+.menubar ul li:hover .drop_home ul li a:hover{
+    color:#5af217;
+}
+
+
+
